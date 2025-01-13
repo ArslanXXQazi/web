@@ -94,7 +94,7 @@ class HomeViewWindows extends StatelessWidget {
                 height:height*.15,
                 width: width*1,
                 color: Appcolor.darkBlue,
-              )
+              ),
             ],
           ),
         ),
