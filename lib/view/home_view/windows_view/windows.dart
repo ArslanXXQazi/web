@@ -78,6 +78,7 @@ class HomeViewWindows extends StatelessWidget {
         child: Column(
           children: [
             MainHomeView(),
+            SizedBox(height: 30,),
             AboutMe(),
           ],
         ),

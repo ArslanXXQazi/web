@@ -16,7 +16,7 @@ class MainHomeView extends StatelessWidget {
         children: [
           Container(
             width: width*.5,
-            height: height*.85,
+            height: height*1,
             child: Padding(
               padding: EdgeInsets.only(left: width*.12),
               child: Column(
@@ -43,7 +43,7 @@ class MainHomeView extends StatelessWidget {
           ),
           Container(
             width: width*.5,
-            height: height*.85,
+            height: height*1,
             child: Center(child:
             Container(
               width: width*.17,
