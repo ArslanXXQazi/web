@@ -21,20 +21,55 @@ class HomeViewWindows extends StatelessWidget {
           CustomTextBold(text: 'Me.',color: Appcolor.yellow),
         ],),
         actions: [
-          CustomText(text: 'HOME'),
-          SizedBox(width: width*.009,),
-          CustomText(text: 'ABOUT',color: Appcolor.grey,),
-          SizedBox(width: width*.009,),
-          CustomText(text: 'SERVICE',color: Appcolor.grey),
-          SizedBox(width: width*.009,),
-          CustomText(text: 'PROTFOLIO',color: Appcolor.grey),
-          SizedBox(width: width*.009,),
-          CustomText(text: 'RESUME',color: Appcolor.grey),
-          SizedBox(width: width*.009,),
-          CustomText(text: 'BLOG',color: Appcolor.grey),
-          SizedBox(width: width*.009,),
-          CustomText(text: 'CONTACT',color: Appcolor.grey),
-          SizedBox(width: width*.08,),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'HOME' here
+            },
+            child: CustomText(text: 'HOME'),
+          ),
+          SizedBox(width: width * 0.009),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'ABOUT' here
+            },
+            child: CustomText(text: 'ABOUT', color: Appcolor.grey),
+          ),
+          SizedBox(width: width * 0.009),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'SERVICE' here
+            },
+            child: CustomText(text: 'SERVICE', color: Appcolor.grey),
+          ),
+          SizedBox(width: width * 0.009),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'PORTFOLIO' here
+            },
+            child: CustomText(text: 'PORTFOLIO', color: Appcolor.grey),
+          ),
+          SizedBox(width: width * 0.009),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'RESUME' here
+            },
+            child: CustomText(text: 'RESUME', color: Appcolor.grey),
+          ),
+          SizedBox(width: width * 0.009),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'BLOG' here
+            },
+            child: CustomText(text: 'BLOG', color: Appcolor.grey),
+          ),
+          SizedBox(width: width * 0.009),
+          TextButton(
+            onPressed: () {
+              // Add your functionality for 'CONTACT' here
+            },
+            child: CustomText(text: 'CONTACT', color: Appcolor.grey),
+          ),
+          SizedBox(width: width * 0.08),
         ],
       ),
       body: Container(
