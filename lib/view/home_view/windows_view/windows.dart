@@ -264,7 +264,7 @@ class _HomeViewWindowsState extends State<HomeViewWindows> {
             onPressed: () => _scrollToWidget(_homeKey, 'HOME'),
             child: CustomText(
               text: 'HOME',
-              color: _selectedButton == 'HOME' ? Colors.green : Appcolor.grey,
+              color: _selectedButton == 'HOME' ? Colors.yellow : Appcolor.grey,
             ),
           ),
           SizedBox(width: width * 0.009),
@@ -272,7 +272,7 @@ class _HomeViewWindowsState extends State<HomeViewWindows> {
             onPressed: () => _scrollToWidget(_aboutMeKey, 'ABOUT'),
             child: CustomText(
               text: 'ABOUT',
-              color: _selectedButton == 'ABOUT' ? Colors.green : Appcolor.grey,
+              color: _selectedButton == 'ABOUT' ? Colors.yellow : Appcolor.grey,
             ),
           ),
           SizedBox(width: width * 0.009),
@@ -280,7 +280,7 @@ class _HomeViewWindowsState extends State<HomeViewWindows> {
             onPressed: () => _scrollToWidget(_servicesKey, 'SERVICE'),
             child: CustomText(
               text: 'SERVICE',
-              color: _selectedButton == 'SERVICE' ? Colors.green : Appcolor.grey,
+              color: _selectedButton == 'SERVICE' ? Colors.yellow : Appcolor.grey,
             ),
           ),
           SizedBox(width: width * 0.009),
@@ -288,7 +288,7 @@ class _HomeViewWindowsState extends State<HomeViewWindows> {
             onPressed: () => _scrollToWidget(_portfolioKey, 'PORTFOLIO'),
             child: CustomText(
               text: 'PORTFOLIO',
-              color: _selectedButton == 'PORTFOLIO' ? Colors.green : Appcolor.grey,
+              color: _selectedButton == 'PORTFOLIO' ? Colors.yellow : Appcolor.grey,
             ),
           ),
           SizedBox(width: width * 0.1),
