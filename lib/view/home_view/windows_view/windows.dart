@@ -4,6 +4,7 @@ import 'package:web/components/constant/colors.dart';
 import 'package:web/components/custom_text/custom_text.dart';
 import 'package:web/view/home_view/windows_view/about_me.dart';
 import 'package:web/view/home_view/windows_view/main_home_view.dart';
+import 'package:web/view/home_view/windows_view/services.dart';
 
 
 class HomeViewWindows extends StatelessWidget {
@@ -80,6 +81,8 @@ class HomeViewWindows extends StatelessWidget {
             MainHomeView(),
             SizedBox(height: 30,),
             AboutMe(),
+            SizedBox(height: 30,),
+            Services(),
           ],
         ),
       ),
