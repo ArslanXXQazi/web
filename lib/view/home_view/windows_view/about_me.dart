@@ -10,57 +10,73 @@ class AboutMe extends StatelessWidget {
   Widget build(BuildContext context) {
     double width=MediaQuery.of(context).size.width;
     double height=MediaQuery.of(context).size.height;
-    return Row(children: [
-      Expanded(
-        flex: 50,
-          child: Container(
-        child:  Stack(
-          children: [
-           Container(
-             height: height*.4,
-             width: width*.2,
-             decoration: BoxDecoration(
-               color: Appcolor.yellow,
-               borderRadius: BorderRadius.circular(10),
-             ),
-             child: Center(
-               child: Container(
+    return Container(
+      height: height*1,
+      width: double.infinity,
+      child: Row(children: [
+       Stack(children: [
+         Container(
+           height: height*1,
+           width: width*.5,
+           child: Center(
+             child: Container(
+               height: height*.4,
+               width: width*.2,
+               decoration: BoxDecoration(
+                 color: Appcolor.yellow,
+                 borderRadius: BorderRadius.circular(10),
+               ),
+               child: Center(child: Container(
                  height: height*.37,
                  width: width*.19,
                  color: Appcolor.darkBlue,
-               ),
+               )),
              ),
            ),
-            Positioned(
-              left: width*.013,bottom: height*.03,
-              child: Container(
-                height: height*.4,
-                width: width*.2,
+         ),
+         Positioned(
+           left: width*.16,top: height*.27,
+           child: Container(
+             height: height*.4,
+             width: width*.2,
+             decoration: BoxDecoration(
+               color: Appcolor.grey,
+               borderRadius: BorderRadius.circular(10),
+             ),
+             child: ClipRRect(
+               borderRadius: BorderRadius.circular(10),
+                 child: Image(image: AssetImage('assets/profile.png'),fit: BoxFit.cover,)),
+           ),
+         )
+       ],),
+        Container(
+          height: height*1,
+          width: width*.5,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            Row(children: [
+              CustomTextBold(text: "About",fontsize: 30,),
+              CustomTextBold(text: " Me",color: Appcolor.yellow,fontsize: 30,),
+            ],),
+              SizedBox(height: height*.06,),
+              CustomText(text: 'There are many variations of passages ofLorem Ipsum\navailable, but the majority havesuffered alteration in some\nform, by injected humour,',color: Colors.grey,),
+              SizedBox(height: height*.03,),
+              CustomText(text: 'Passages ofLorem Ipsumavailable, but the majority havesuffered\nalteration in some form, by injected humour',color: Colors.grey,),
+              SizedBox(height: height*.03,),
+              Container(
+                height: height*.07,
+                width: width*.1,
+                child: Center(child: CustomText(text: 'Contact Us',color: Colors.black,),),
                 decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(10),
+                  color: Appcolor.yellow,
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                    child: Image(image: AssetImage('assets/profile.png'),fit: BoxFit.cover,)),
               ),
-            )
-
-          ],
-        ),
-      )),
-      Expanded(
-          flex: 50,
-          child: Container(
-            child:Column(children: [
-              Row(
-                children: [
-                  CustomTextBold(text: "About "),
-                  CustomTextBold(text: "Me",color: Appcolor.yellow,),
-                ],
-              ),
-            ],) ,
-          )),
-    ],);
+            ],),
+        )
+      ],),
+    );
   }
 }
