@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:web/components/constant/colors.dart';
 import 'package:web/components/custom_text/custom_text.dart';
