@@ -11,7 +11,7 @@ class AboutMe extends StatelessWidget {
     double width=MediaQuery.of(context).size.width;
     double height=MediaQuery.of(context).size.height;
     return Container(
-      height: height*1,
+      height: height*.9,
       width: double.infinity,
       child: Row(children: [
        Stack(children: [
