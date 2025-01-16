@@ -46,7 +46,7 @@ class ServicesTablet extends StatelessWidget {
                           CustomTextBold(text: 'Digital'),
                           CustomTextBold(text: 'Marketing'),
                           SizedBox(height: height*.03,),
-                          CustomText(text: 'There are many variations of',color: Colors.grey,),
+                          CustomText(text: 'There are many variations of ',color: Colors.grey,),
                           CustomText(text: 'passages ofLorem Ipsumavailable',color: Colors.grey,),
                           CustomText(text: 'but the majority havesuffered',color: Colors.grey,),
                           CustomText(text: 'alteration in some',color: Colors.grey,),

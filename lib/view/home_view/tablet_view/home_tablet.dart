@@ -48,7 +48,7 @@ class HomeTablet extends StatelessWidget {
                   ),
                   Container(
                     height: height * .05,
-                    width: width * .1,
+                    width: width * .4,
                     child: Center(
                       child: CustomText(
                         text: 'Contact',

@@ -2,7 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:web/components/constant/colors.dart';
 import 'package:web/components/custom_text/custom_text.dart';
+import 'package:web/view/home_view/mobile_view/about_mobile.dart';
 import 'package:web/view/home_view/mobile_view/home_mobile.dart';
+import 'package:web/view/home_view/mobile_view/portfolio_mobile.dart';
+import 'package:web/view/home_view/mobile_view/services_mobile.dart';
 import 'package:web/view/home_view/windows_view/about_me_windows.dart';
 import 'package:web/view/home_view/windows_view/main_home_view_windows.dart';
 import 'package:web/view/home_view/windows_view/portfolio_windows.dart';
@@ -54,7 +57,6 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
           child: Row(children: [
             CustomTextBold(text: 'About'),
             CustomTextBold(text: 'Me.',color: Appcolor.yellow,),
-
             TextButton(
               onPressed: () => _scrollToWidget(_homeKey, 'HOME'),
               child: CustomText(
@@ -104,17 +106,17 @@ class _HomeViewMobileState extends State<HomeViewMobile> {
             SizedBox(height: 30),
             Container(
               key: _aboutMeKey,
-              child: AboutMe(),
+              child: AboutMobile(),
             ),
             SizedBox(height: 30),
             Container(
               key: _servicesKey,
-              child: Services(),
+              child: ServicesMobile(),
             ),
             SizedBox(height: 30),
             Container(
               key: _portfolioKey,
-              child: Portfolio(),
+              child: PortfolioMobile(),
             ),
           ],
         ),

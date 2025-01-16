@@ -5,8 +5,8 @@ import 'package:web/components/constant/colors.dart';
 import 'package:web/components/custom_text/custom_text.dart';
 import 'package:web/view/home_view/tablet_view/about_tablet.dart';
 import 'package:web/view/home_view/tablet_view/home_tablet.dart';
+import 'package:web/view/home_view/tablet_view/portfolio_tablet.dart';
 import 'package:web/view/home_view/tablet_view/services_tablet.dart';
-import 'package:web/view/home_view/windows_view/portfolio_windows.dart';
 
 class HomeViewTablet extends StatefulWidget {
   const HomeViewTablet({super.key});
@@ -49,14 +49,18 @@ class _HomeViewTabletState extends State<HomeViewTablet> {
       backgroundColor: Appcolor.darkBlue,
       appBar: AppBar(
         backgroundColor: Appcolor.darkBlue,
+        centerTitle: true,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(width: width * .11),
-            CustomTextBold(text: 'About'),
-            CustomTextBold(text: 'Me.', color: Appcolor.yellow),
-          ],
-        ),
-        actions: [
+         Padding(
+           padding: EdgeInsets.only(left: width*.1),
+           child: Row(children: [
+             CustomTextBold(text: 'About'),
+             CustomTextBold(text: 'Me.',color: Appcolor.yellow,),
+           ],),
+         ),
+        Row(children: [
           TextButton(
             onPressed: () => _scrollToWidget(_homeKey, 'HOME'),
             child: CustomText(
@@ -88,8 +92,8 @@ class _HomeViewTabletState extends State<HomeViewTablet> {
               color: _selectedButton == 'PORTFOLIO' ? Colors.yellow : Appcolor.grey,
             ),
           ),
-          SizedBox(width: width * 0.1),
-        ],
+        ],)
+        ],),
       ),
       body: SingleChildScrollView(
         controller: _scrollController,
@@ -112,7 +116,7 @@ class _HomeViewTabletState extends State<HomeViewTablet> {
             SizedBox(height: 30),
             Container(
               key: _portfolioKey,
-              child: Portfolio(),
+              child: PortfolioTablet(),
             ),
           ],
         ),

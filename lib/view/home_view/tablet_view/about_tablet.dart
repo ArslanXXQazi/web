@@ -66,7 +66,7 @@ class AboutMeTablet extends StatelessWidget {
               SizedBox(height: height*.03,),
               Container(
                 height: height*.07,
-                width: width*.15,
+                width: width*.4,
                 child: Center(child: CustomText(text: 'Contact Us',color: Colors.black,),),
                 decoration: BoxDecoration(
                   color: Appcolor.yellow,
